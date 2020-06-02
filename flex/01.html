@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./default.css">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            
+        }
+        .flex-item{
+            flex: 1 auto;
+            /* flex-grow가 1이므로 flex-basis보다 더 늘어날 수 있도록 설정하는것이므로 여백 비율을 1 1 1 로 설정 */
+        }
+
+        @media (min-width: 600px){
+            .flex-container{
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .flex-item{
+                /* flex: 1 40%; */
+                width: 50%;
+             }
+        }
+
+        @media (min-width: 700px){
+            .flex-item{
+                width: 30%;
+                /* flex: 0 auto; */
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">aaaa</div>
+        <div class="flex-item">bb</div>
+        <div class="flex-item">c</div>
+        <div class="flex-item">c</div>
+        <div class="flex-item">c</div>
+        <div class="flex-item">c</div>
+        <div class="flex-item">c</div>
+        <div class="flex-item">c</div>
+        <div class="flex-item">dddd</div>
+        <div class="flex-item">eee</div>
+        <div class="flex-item">fff</div>
+    </div>
+
+    <!-- <div class="flex_container2">
+        <div class="flex-item">justify-content</div>
+        <div class="flex-item">flex-end</div>
+        <div class="flex-item">CCC</div>
+    </div>
+
+    <div class="flex_container3">
+        <div class="flex-item">justify-content</div>
+        <div class="flex-item">center</div>
+        <div class="flex-item">CCC</div>
+    </div>
+
+    <div class="flex_container4">
+        <div class="flex-item">justify-content</div>
+        <div class="flex-item">space-around</div>
+        <div class="flex-item">CCC</div>
+    </div>
+
+    <div class="flex_container5">
+        <div class="flex-item">justify-content</div>
+        <div class="flex-item">space-between</div>
+        <div class="flex-item">CCC</div>
+    </div>
+
+    <div class="flex_container6">
+        <div class="flex-item">justify-content</div>
+        <div class="flex-item">space-evenly</div>
+        <div class="flex-item">CCC</div>
+    </div>
+ -->
+</body>
+
+</html>

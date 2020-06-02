@@ -1,0 +1,31 @@
+.user_item{
+    display: flex;
+    margin-top: 1.5em;
+}
+
+.user_img{
+    /* flex-item의 크기가 줄어지지 않도록 설정 */
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background-color: gold;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150%;
+    margin-right: 0.5rem;
+}   
+
+/* userList */
+
+.friend_item{
+    align-items: center;
+}
+
+.user_name{
+    /* 줄 넘김 방지 + 말 줄임표... */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

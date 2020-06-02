@@ -1,0 +1,15 @@
+.info_list{
+
+}
+
+/* flex로 설정 */
+.info_list_item{
+    display: flex;
+    margin: 0.5em 0;
+}
+
+/* bullet-list */
+.info_list_item::before{
+    content: '➥';
+    margin-right: 0.4em;
+}
