@@ -1,0 +1,84 @@
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#radio-sort-default{
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+.sort_label{
+    font-size: 1rem;
+    padding: 1em;
+}   
+
+#radio-sort-category{
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+.sort_label{
+    font-size: 1rem;
+    padding: 1em;
+}
+#radio-sort-default:checked + .sort_label{
+    background: #000;
+    color: #fff;
+}
+#radio-sort-category:checked + .sort_label{
+    background: #000;
+    color: #fff;
+}
+
+#radio-sort-category:checked ~ .cate_tech{ grid-row: 3; }
+#radio-sort-category:checked ~ .cate_food{ grid-row: 4; }
+#radio-sort-category:checked ~ .cate_music{ grid-row: 5; }
+#radio-sort-category:checked ~ .cate_game{ grid-row: 6; }
+
+.header{
+    grid-column: 1 / 5;
+    color: grey;
+    font-size: 2.5rem;
+}
+
+.cate_item{
+    border: 1px solid lightgray;
+}
+
+.cate_item_content{
+    padding: 1em;
+    font-size: 1rem;
+}
+
+.cate_name.cate_food{
+    background-color: crimson;
+    padding: 0.8rem;
+}
+.cate_name.cate_music{
+    background: skyblue;
+    padding: 0.8rem;
+}
+.cate_name.cate_game{
+    background: orangered;
+    padding: 0.8rem;
+}
+.cate_name.cate_tech{
+    background: palegreen;
+    padding: 0.8rem;
+}
+
+
+.footer{
+    grid-column: 1 / 5;
+    padding: 0.5em;
+}
