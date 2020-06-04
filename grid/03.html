@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./default.css">
+    <style>
+        .grid_container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+            grid-template-rows: repeat(5, minmax(50px, auto));
+        }
+        .grid_item:nth-child(2){ grid-column: auto / span 3;}
+        .grid_item:nth-child(5){ grid-column: auto / span 3;}
+        .grid_item:nth-child(7){ grid-column: auto / span 2;}
+    </style>
+</head>
+<body>
+    <div class="grid_container">
+        <div class="grid_item">a</div>
+        <div class="grid_item">b</div>
+        <div class="grid_item">c</div>
+        <div class="grid_item">d</div>
+        <div class="grid_item">e</div>
+        <div class="grid_item">f</div>
+        <div class="grid_item">g</div>
+        <div class="grid_item">h</div>
+    </div>
+
+</body>
+</html>
