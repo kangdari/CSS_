@@ -59,7 +59,10 @@
 /* primary - card_list */
 
 .card_list{
-
+    display: grid;
+    /* 최소 너비는 210px로 설정. auto-fill 속성으로 공간이 생기면 자동으로 요소를 채워줌 */
+    grid-template-columns: repeat(auto-fill, minmax(210px, auto));
+    column-gap: 2%;
 }
 
 .card_item{
@@ -70,7 +73,8 @@
 
 .card_img{
     height: 0;
-    padding: 50%;
+    padding-bottom: 50%;
+    /* height: 50vh; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -89,19 +93,18 @@
 
 @media (min-width: 768px){
     .card_list{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 -1rem;
+
+        /* margin: 0 -1rem; */
     }
     .card_item{
-        width: 50%;
-        padding: 0 1rem;
+
+        /* padding: 0 1rem; */
     }
 }
 
 @media (min-width: 992px){
     .card_item{
-        width: 33.33333%;
+        /* width: 33.33333%; */
     }
 }
 
