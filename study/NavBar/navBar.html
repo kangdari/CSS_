@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../default.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/62bfc1357a.js" crossorigin="anonymous"></script>
+    <title>navBar</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__logo">
+            <i class="nav__logo__item fab fa-apple"></i>
+            <h3>Kangdari</h3>
+        </div>
+
+        <ul class="nav__menu">
+            <li class="nav__menu__item">Home</li>
+            <li class="nav__menu__item">Gallery</li>
+            <li class="nav__menu__item">Weddings</li>
+            <li class="nav__menu__item">FAQ</li>
+            <li class="nav__menu__item">Bookings</li>
+        </ul>
+        
+        <div class="nav__icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+
+        <div class="nav__toggleBtn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </nav>
+
+    <script>
+        const $nav__toogeBtn = document.querySelector('.nav__toggleBtn');
+        const $nav__menu = document.querySelector('.nav__menu');
+        const $nav__icons = document.querySelector('.nav__icons');
+
+        $nav__toogeBtn.addEventListener('click', (e) => {
+            $nav__menu.classList.toggle('visible')
+            $nav__icons.classList.toggle('visible')
+        })
+
+    </script>
+</body>
+</html>

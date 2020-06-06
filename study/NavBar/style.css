@@ -1,0 +1,93 @@
+:root{
+    --text--color: #f0f0f0;
+    --bakcground--color: #2A3242;
+    --accent-color: bisque;
+}
+
+body{
+    font-family:  'Source Sans Pro', sans-serif;
+}
+
+.nav{
+    width: 100%;
+    background-color: #2A3242;
+    /* color: blue; */
+    color: var(--text--color);
+}
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 2rem;
+    padding: 1em;
+}
+
+.nav__logo__item, .nav__toggleBtn{
+    color: var(--accent-color)
+}
+
+.nav__logo i:nth-child(1){
+    margin-right: 10px;
+}
+
+.nav__menu{
+    display: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav__menu .nav__menu__item{
+    padding: 1em;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.nav__menu .nav__menu__item:hover{
+    background-color: crimson;
+    border-radius: 4px;
+}
+
+.nav__icons{
+    display: none;
+    font-size: 1.5rem;
+    padding: 1em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav__icons i:nth-child(1){
+    margin-right: 0.5em;
+}
+
+.nav__toggleBtn{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 40px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.visible{
+    display: block;
+}
+
+@media (min-width: 992px){
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .nav__menu{
+        display: flex;
+    }
+
+    .nav__icons{
+        display: flex ;
+    }
+
+    .nav__toggleBtn{
+        display: none;
+    }
+}
