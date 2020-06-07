@@ -1,0 +1,129 @@
+body {
+  background: ivory;
+}
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  height: 56px;
+  /* 상단 고정 */
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.header .header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header .header__left .btn {
+  margin-right: 0.5em;
+}
+
+.header .header__left .logo__container {
+  width: 80px;
+}
+
+.header__center {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+}
+
+.header__center .back_btn {
+  font-size: 1rem;
+  padding: 8px;
+  margin-right: 8px;
+}
+.header__center .search__form {
+  display: flex;
+  width: 70%;
+  background-color: #fff;
+  padding: 3px 6px;
+  border: 1px solid lightgrey;
+}
+
+.header__center .search__form .search__input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 2px 6px;
+  width: 100%;
+}
+
+.header__center .search__form button {
+  font-size: 1rem;
+}
+
+.header__center .search__btn {
+  width: 60px;
+  height: 30px;
+  border: 1px solid lightgrey;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0;
+  color: grey;
+}
+
+.header__center .search__btn:hover {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header .header__right {
+  display: flex;
+}
+
+.header .header__right .icon__box {
+  display: flex;
+  align-items: center;
+}
+
+.header .header__right .icon__box .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.8rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #6d4c41;
+  margin: 0 0.3em;
+}
+
+.icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+.visible {
+  display: flex;
+  align-items: center;
+}
+/* header - end */
+
+/* search box 크게 */
+@media screen and (min-width: 668px) {
+  .header__center {
+    position: static;
+    display: flex;
+    flex: 1;
+    max-width: 780px;
+    margin: 0 20px 0 40px;
+  }
+  .header__center .search__form {
+    width: 100%;
+  }
+
+  .header__center .back_btn {
+    display: none;
+  }
+}
