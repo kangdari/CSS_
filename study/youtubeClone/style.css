@@ -1,7 +1,6 @@
 :root {
-  --text--color: #f0f0f0;
-  --bakcground--color: #2a3242;
   --border--color: #e9e8e9;
+  --text-grey--color: #909090;
 }
 /* color: var(--accent-color) */
 
@@ -87,9 +86,12 @@ body {
   display: flex;
 }
 
-.header .header__right .icon__box {
+.search__box .search_icon,
+.header .header__right .icon__box,
+.header .header__right .icon__box i {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header .header__right .icon__box .avatar {
@@ -106,7 +108,7 @@ body {
 }
 
 .icon {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   height: 24px;
   width: 24px;
   cursor: pointer;
@@ -150,6 +152,7 @@ body {
   transition: transform 0.2s ease-in-out;
   transform: translate(-250px, 0);
   z-index: 10;
+  overflow-y: auto;
 }
 
 .side .side__logoBox {
@@ -171,36 +174,84 @@ body {
   border-bottom: 1px solid var(--border--color);
 }
 
-.side__menu .side__menu__item {
+.side__menu__item {
   display: flex;
   align-items: center;
   padding: 0 24px;
-  height: 48px;
+  height: 40px;
+  font-size: 1rem;
   cursor: pointer;
+}
+
+.side__menu__item__title{
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  height: 40px;
   font-size: 1rem;
 }
 
-.side__menu .side__menu__item:hover {
+.side__menu__item:hover {
   background-color: rgba(0, 0, 0, 0.08);
 }
 
-.side__menu .side__menu__item i {
+.side__menu__item i {
   margin-right: 1rem;
   padding: 0;
   width: 24px;
+  font-size: 1rem;
+  height: auto;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.side__menu__expansion {
+.side__menu__expansion,
+.sub__side__menu__expansion {
   display: none;
-  font-size: 1rem;
 }
-.side__menu__expansion.show {
+.side__menu__expansion.show,
+.sub__side__menu__expansion.show {
   display: block;
 }
 
-/* search box 크게 */
+.side__menu__item figure{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  background-image: url('./img/kang.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.side__menu__item figure img{
+  border-radius: 50%;
+}
+
+.guide__info{
+  padding: 8px 16px 0;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+
+.guide__info a{
+  font-size: 13px;
+  color: var(--text-grey--color);
+  margin-right: 8px;
+}
+
+.copyright{
+  color: var(--text-grey--color);
+  padding: 24px 16px;
+  font-size: 13px;
+}
+
+/* aside - end */
+
 @media screen and (min-width: 668px) {
+  /* search 크게 */
   .header__center {
     position: static;
     display: flex;
@@ -211,8 +262,10 @@ body {
   .header__center .search__form {
     width: 100%;
   }
-
-  .header__center .back_btn {
+  .search__box,
+  .header__center .back_btn{
     display: none;
   }
+
+
 }
