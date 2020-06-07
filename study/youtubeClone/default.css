@@ -141,9 +141,17 @@ img {
   border: 0;
 }
 a {
-  display: inline-block;
+  color: black;
+
+  text-decoration: none;
+  outline: none;
 }
 
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+}
 button {
   border: none;
   outline: none;
