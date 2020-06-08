@@ -7,6 +7,7 @@
 body {
   background: ivory;
 }
+
 /* header */
 .header {
   display: flex;
@@ -183,7 +184,7 @@ body {
   cursor: pointer;
 }
 
-.side__menu__item__title{
+.side__menu__item__title {
   display: flex;
   align-items: center;
   padding: 0 24px;
@@ -216,39 +217,41 @@ body {
   display: block;
 }
 
-.side__menu__item figure{
+.side__menu__item figure {
   width: 24px;
   height: 24px;
   border-radius: 50%;
   margin-right: 1rem;
-  background-image: url('./img/kang.jpg');
+  background-image: url("./img/kang.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-.side__menu__item figure img{
+.side__menu__item figure img {
   border-radius: 50%;
 }
 
-.guide__info{
+.guide__info {
   padding: 8px 16px 0;
   display: flex;
   /* justify-content: space-between; */
   flex-wrap: wrap;
 }
 
-.guide__info a{
+.guide__info a {
   font-size: 13px;
   color: var(--text-grey--color);
   margin-right: 8px;
 }
 
-.copyright{
+.copyright {
   color: var(--text-grey--color);
   padding: 24px 16px;
   font-size: 13px;
 }
 
 /* aside - end */
+
+/* main - video */
 
 @media screen and (min-width: 668px) {
   /* search 크게 */
@@ -263,9 +266,7 @@ body {
     width: 100%;
   }
   .search__box,
-  .header__center .back_btn{
+  .header__center .back_btn {
     display: none;
   }
-
-
 }
