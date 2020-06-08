@@ -12,14 +12,15 @@
   /* size */
   --large--padding: 1.5rem;
   --small--padding: 1rem;
+  --icon--ppading: 8px;
   --avatar--large--size: 40px;
   --avarar--small--size: 24px;
   /* border */
   --border--color: #e9e8e9;
 }
 
-body {
-  background: ivory;
+#wrap {
+  background: #fff;
 }
 
 /* header */
@@ -268,7 +269,7 @@ body {
 
 /* main - video */
 main {
-  margin-top: 80px;
+  margin-top: 56px;
 }
 
 .player {
@@ -286,6 +287,45 @@ main {
 
 .video__info {
   margin-left: var(--large--padding);
+  padding: var(--small--padding) 0;
+  margin-right: var(--large--padding);
+  border-bottom: 1px solid var(--border--color);
+}
+
+.video__info .hashtags {
+  display: flex;
+  color: var(--blue--color);
+  font-size: var(--font--small);
+  padding-bottom: 4px;
+}
+
+.video__info .hashtags li {
+  padding-right: 5px;
+}
+
+.video__info .title {
+  font-size: var(--font--large);
+  color: var(--black--color);
+}
+
+.video__info .meta_data {
+  display: flex;
+  align-items: center;
+  font-size: var(--font--small);
+}
+
+.video__info .meta_data .views {
+  padding-right: 5px;
+}
+
+.video__info .meta_data .btns {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.video__info .meta_data .btns button {
+  color: var(--grey--color);
 }
 
 @media screen and (min-width: 668px) {

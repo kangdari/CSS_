@@ -12,49 +12,10 @@
 </head>
 
 <body>
-  <!-- header -->
-  <header class="header">
-    <div class="header__left">
-      <button class="aside__btn">
-        <i class="icon fas fa-bars"></i>
-      </button>
-      <div class="logo__container">
-        <img src="./img/youtube__logo.png" alt="" />
-      </div>
-    </div>
-
-    <div class="header__center">
-      <button class="back_btn">
-        <i class="fas fa-arrow-left"></i>
-      </button>
-      <form class="search__form">
-        <input class="search__input" type="text" placeholder="검색" />
-        <button><i class="fas fa-keyboard"></i></button>
-      </form>
-      <button class="search__btn">
-        <i class="fas fa-search"></i>
-      </button>
-    </div>
-
-    <div class="header__right">
-      <div class="search__box">
-        <i class="search_icon icon fas fa-search"></i>
-      </div>
-      <div class="icon__box">
-        <i class="icon fas fa-video"></i>
-        <i class="icon fas fa-th"></i>
-        <i class="icon fas fa-bell"></i>
-        <div class="avatar">상혁</div>
-      </div>
-    </div>
-  </header>
-
-  <!-- aside -->
-  <aside class="side">
-    <div class="side__background"></div>
-    <div class="side__container">
-      <!-- logo -->
-      <div class="side__logoBox">
+  <div id="wrap">
+    <!-- header -->
+    <header class="header">
+      <div class="header__left">
         <button class="aside__btn">
           <i class="icon fas fa-bars"></i>
         </button>
@@ -62,305 +23,348 @@
           <img src="./img/youtube__logo.png" alt="" />
         </div>
       </div>
-      <div class="section">
-        <!-- 1번 -->
-        <div class="side__menu">
-          <div class="side__menu__item">
-            <i class="fas fa-home"></i>
-            <a href="">홈</a>
-          </div>
-          <div class="side__menu__item">
-            <i class="fas fa-fire"></i>
-            <a href="">인기</a>
-          </div>
-          <div class="side__menu__item">
-            <i class="fas fa-book-open"></i>
-            <a href="">구독</a>
-          </div>
+
+      <div class="header__center">
+        <button class="back_btn">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <form class="search__form">
+          <input class="search__input" type="text" placeholder="검색" />
+          <button><i class="fas fa-keyboard"></i></button>
+        </form>
+        <button class="search__btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <div class="header__right">
+        <div class="search__box">
+          <i class="search_icon icon fas fa-search"></i>
         </div>
-        <!-- 2번 -->
-        <div class="side__menu">
-          <div class="side__menu__item">
-            <i class="fas fa-database"></i>
-            <span href="">보관함</span>
-          </div>
-          <div class="side__menu__item">
-            <i class="fas fa-history"></i>
-            <span href="">시청 기록</span>
-          </div>
-          <div class="side__menu__item">
-            <i class="fas fa-video"></i>
-            <span href="">내 동영상</span>
-          </div>
-          <div class="side__menu__item">
-            <i class="fas fa-clock"></i>
-            <span href="">나중에 볼 동영상</span>
-          </div>
-          <div class="side__menu__item">
-            <i class="fas fa-thumbs-up"></i>
-            <span href="">좋아요 표시한 동영상</span>
-          </div>
-          <div class="expansion__btn side__menu__item">
-            <i class="fas fa-chevron-down"></i>
-            <span href="">더 보기</span>
-          </div>
-          <div class="side__menu__expansion">
-            <div class="side__menu__item">
-              <i class="fas fa-th-list"></i>
-              <span href="">내 앨범1</span>
-            </div>
-            <div class="side__menu__item">
-              <i class="fas fa-th-list"></i>
-              <span href="">내 앨범2</span>
-            </div>
-            <div class="side__menu__item">
-              <i class="fas fa-th-list"></i>
-              <span href="">내 앨범3</span>
-            </div>
-            <div class="simple__btn side__menu__item">
-              <i class="fas fa-chevron-up"></i>
-              <span href="">간략히 보기</span>
-            </div>
-          </div>
-        </div>
-        <!-- 3번 구독 -->
-        <div class="side__menu">
-          <div class="side__menu__item__title">
-            구독
-          </div>
-          <div class="side__menu__item">
-            <figure>
-              <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
-            </figure>
-            <span href="">유튜브 채널 이름</span>
-          </div>
-          <div class="side__menu__item">
-            <figure>
-              <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
-            </figure>
-            <span href="">유튜브 채널 이름</span>
-          </div>
-          <div class="side__menu__item">
-            <figure>
-              <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
-            </figure>
-            <span href="">유튜브 채널 이름</span>
-          </div>
-          <div class="side__menu__item">
-            <figure>
-              <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
-            </figure>
-            <span href="">유튜브 채널 이름</span>
-          </div>
-          <div class="sub__expansion__btn side__menu__item">
-            <i class="fas fa-chevron-down"></i>
-            <span href="">5개 더 보기</span>
-          </div>
-          <div class="sub__side__menu__expansion">
-            <div class="side__menu__item">
-              <figure>
-                <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
-              </figure>
-              <span href="">유튜브 채널 이름1</span>
-            </div>
-            <div class="side__menu__item">
-              <figure>
-                <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
-              </figure>
-              <span href="">유튜브 채널 이름2</span>
-            </div>
-            <div class="side__menu__item">
-              <figure>
-                <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
-              </figure>
-              <span href="">유튜브 채널 이름3</span>
-            </div>
-            <div class="side__menu__item">
-              <figure>
-                <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
-              </figure>
-              <span href="">유튜브 채널 이름4</span>
-            </div>
-            <div class="side__menu__item">
-              <figure>
-                <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
-              </figure>
-              <span href="">유튜브 채널 이름5</span>
-            </div>
-            <div class="sub__simple__btn side__menu__item">
-              <i class="fas fa-chevron-up"></i>
-              <span href="">간략히 보기</span>
-            </div>
-          </div>
-        </div>
-        <!-- 4번 Youtube 더보기 -->
-        <div class="side__menu">
-          <div class="side__menu__item__title">Youtube 더보기</div>
-          <div class="side__menu__item">
-            <i class="fab fa-youtube"></i>
-            <span href="">YouTube Preminum</span>
-          </div>
-          <div class="side__menu__item">
-            <i class="fas fa-film"></i>
-            <span href="">YouTube 영화</span>
-          </div>
-          <div class="side__menu__item">
-            <i class="fas fa-gamepad"></i>
-            <span href="">게임</span>
-          </div>
-          <div class="side__menu__item">
-            <i class="fas fa-broadcast-tower"></i>
-            <span href="">실시간</span>
-          </div>
-          <div class="side__menu__item">
-            <i class="fas fa-lightbulb"></i>
-            <span href="">학습</span>
-          </div>
-        </div>
-        <!-- 5번 설정 -->
-        <div class="side__menu">
-          <div class="side__menu__item">
-            <i class="fas fa-cog"></i>
-            <span href="">설정</span>
-          </div>
-          <div class="side__menu__item">
-            <i class="fas fa-flag"></i>
-            <span href="">신고 기록</span>
-          </div>
-          <div class="side__menu__item">
-            <i class="fas fa-question-circle"></i>
-            <span href="">고객 센터</span>
-          </div>
-          <div class="side__menu__item">
-            <i class="fas fa-exclamation-triangle"></i>
-            <span href="">의견 보내기</span>
-          </div>
+        <div class="icon__box">
+          <i class="icon fas fa-video"></i>
+          <i class="icon fas fa-th"></i>
+          <i class="icon fas fa-bell"></i>
+          <div class="avatar">상혁</div>
         </div>
       </div>
-      <div class="footer">
-        <div class="guide__info">
-          <a target="_blank" href="">정보</a>
-          <a target="_blank" href="">프레스</a>
-          <a target="_blank" href="">저작권</a>
-          <a target="_blank" href="">문의하기</a>
-          <a target="_blank" href="">크리에이터</a>
-          <a target="_blank" href="">광고</a>
-          <a target="_blank" href="">개발자</a>
+    </header>
+
+    <!-- aside -->
+    <aside class="side">
+      <div class="side__background"></div>
+      <div class="side__container">
+        <!-- logo -->
+        <div class="side__logoBox">
+          <button class="aside__btn">
+            <i class="icon fas fa-bars"></i>
+          </button>
+          <div class="logo__container">
+            <img src="./img/youtube__logo.png" alt="" />
+          </div>
         </div>
-        <div class="guide__info">
-          <a target="_blank" href="">이용약관</a>
-          <a target="_blank" href="">개인정보 보호</a>
-          <a target="_blank" href="">정책 및 안전</a>
-          <a target="_blank" href="">새로운 기능 테스트하기</a>
+        <div class="section">
+          <!-- 1번 -->
+          <div class="side__menu">
+            <div class="side__menu__item">
+              <i class="fas fa-home"></i>
+              <a href="">홈</a>
+            </div>
+            <div class="side__menu__item">
+              <i class="fas fa-fire"></i>
+              <a href="">인기</a>
+            </div>
+            <div class="side__menu__item">
+              <i class="fas fa-book-open"></i>
+              <a href="">구독</a>
+            </div>
+          </div>
+          <!-- 2번 -->
+          <div class="side__menu">
+            <div class="side__menu__item">
+              <i class="fas fa-database"></i>
+              <span href="">보관함</span>
+            </div>
+            <div class="side__menu__item">
+              <i class="fas fa-history"></i>
+              <span href="">시청 기록</span>
+            </div>
+            <div class="side__menu__item">
+              <i class="fas fa-video"></i>
+              <span href="">내 동영상</span>
+            </div>
+            <div class="side__menu__item">
+              <i class="fas fa-clock"></i>
+              <span href="">나중에 볼 동영상</span>
+            </div>
+            <div class="side__menu__item">
+              <i class="fas fa-thumbs-up"></i>
+              <span href="">좋아요 표시한 동영상</span>
+            </div>
+            <div class="expansion__btn side__menu__item">
+              <i class="fas fa-chevron-down"></i>
+              <span href="">더 보기</span>
+            </div>
+            <div class="side__menu__expansion">
+              <div class="side__menu__item">
+                <i class="fas fa-th-list"></i>
+                <span href="">내 앨범1</span>
+              </div>
+              <div class="side__menu__item">
+                <i class="fas fa-th-list"></i>
+                <span href="">내 앨범2</span>
+              </div>
+              <div class="side__menu__item">
+                <i class="fas fa-th-list"></i>
+                <span href="">내 앨범3</span>
+              </div>
+              <div class="simple__btn side__menu__item">
+                <i class="fas fa-chevron-up"></i>
+                <span href="">간략히 보기</span>
+              </div>
+            </div>
+          </div>
+          <!-- 3번 구독 -->
+          <div class="side__menu">
+            <div class="side__menu__item__title">
+              구독
+            </div>
+            <div class="side__menu__item">
+              <figure>
+                <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
+              </figure>
+              <span href="">유튜브 채널 이름</span>
+            </div>
+            <div class="side__menu__item">
+              <figure>
+                <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
+              </figure>
+              <span href="">유튜브 채널 이름</span>
+            </div>
+            <div class="side__menu__item">
+              <figure>
+                <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
+              </figure>
+              <span href="">유튜브 채널 이름</span>
+            </div>
+            <div class="side__menu__item">
+              <figure>
+                <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
+              </figure>
+              <span href="">유튜브 채널 이름</span>
+            </div>
+            <div class="sub__expansion__btn side__menu__item">
+              <i class="fas fa-chevron-down"></i>
+              <span href="">5개 더 보기</span>
+            </div>
+            <div class="sub__side__menu__expansion">
+              <div class="side__menu__item">
+                <figure>
+                  <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
+                </figure>
+                <span href="">유튜브 채널 이름1</span>
+              </div>
+              <div class="side__menu__item">
+                <figure>
+                  <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
+                </figure>
+                <span href="">유튜브 채널 이름2</span>
+              </div>
+              <div class="side__menu__item">
+                <figure>
+                  <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
+                </figure>
+                <span href="">유튜브 채널 이름3</span>
+              </div>
+              <div class="side__menu__item">
+                <figure>
+                  <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
+                </figure>
+                <span href="">유튜브 채널 이름4</span>
+              </div>
+              <div class="side__menu__item">
+                <figure>
+                  <!-- <img src="./img/kang.jpg" alt="avatar_img"> -->
+                </figure>
+                <span href="">유튜브 채널 이름5</span>
+              </div>
+              <div class="sub__simple__btn side__menu__item">
+                <i class="fas fa-chevron-up"></i>
+                <span href="">간략히 보기</span>
+              </div>
+            </div>
+          </div>
+          <!-- 4번 Youtube 더보기 -->
+          <div class="side__menu">
+            <div class="side__menu__item__title">Youtube 더보기</div>
+            <div class="side__menu__item">
+              <i class="fab fa-youtube"></i>
+              <span href="">YouTube Preminum</span>
+            </div>
+            <div class="side__menu__item">
+              <i class="fas fa-film"></i>
+              <span href="">YouTube 영화</span>
+            </div>
+            <div class="side__menu__item">
+              <i class="fas fa-gamepad"></i>
+              <span href="">게임</span>
+            </div>
+            <div class="side__menu__item">
+              <i class="fas fa-broadcast-tower"></i>
+              <span href="">실시간</span>
+            </div>
+            <div class="side__menu__item">
+              <i class="fas fa-lightbulb"></i>
+              <span href="">학습</span>
+            </div>
+          </div>
+          <!-- 5번 설정 -->
+          <div class="side__menu">
+            <div class="side__menu__item">
+              <i class="fas fa-cog"></i>
+              <span href="">설정</span>
+            </div>
+            <div class="side__menu__item">
+              <i class="fas fa-flag"></i>
+              <span href="">신고 기록</span>
+            </div>
+            <div class="side__menu__item">
+              <i class="fas fa-question-circle"></i>
+              <span href="">고객 센터</span>
+            </div>
+            <div class="side__menu__item">
+              <i class="fas fa-exclamation-triangle"></i>
+              <span href="">의견 보내기</span>
+            </div>
+          </div>
         </div>
-        <div class="copyright">
-          <p>© 2020 Google LLC</p>
-          <p>회사명: Google LLC </p>
-          <p>CEO: Sundar Pichai </p>
-          <p>주소: 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. </p>
-          <p>전화: 080-822-1450 (무료)</p>
+        <div class="footer">
+          <div class="guide__info">
+            <a target="_blank" href="">정보</a>
+            <a target="_blank" href="">프레스</a>
+            <a target="_blank" href="">저작권</a>
+            <a target="_blank" href="">문의하기</a>
+            <a target="_blank" href="">크리에이터</a>
+            <a target="_blank" href="">광고</a>
+            <a target="_blank" href="">개발자</a>
+          </div>
+          <div class="guide__info">
+            <a target="_blank" href="">이용약관</a>
+            <a target="_blank" href="">개인정보 보호</a>
+            <a target="_blank" href="">정책 및 안전</a>
+            <a target="_blank" href="">새로운 기능 테스트하기</a>
+          </div>
+          <div class="copyright">
+            <p>© 2020 Google LLC</p>
+            <p>회사명: Google LLC </p>
+            <p>CEO: Sundar Pichai </p>
+            <p>주소: 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. </p>
+            <p>전화: 080-822-1450 (무료)</p>
+          </div>
         </div>
-      </div>
-  </aside>
-  <!-- main -->
-  <main>
-    <!-- video -->
-    <section class="player">
-      <video src="./video/video.mp4" controls type="video/mp4">ss</video>
-    </section>
-    <!-- video info -->
-    <section class="video__info">
-      <ul class="hashtags">
-        <li>#tag</li>
-        <li>#tag</li>
-        <li>#tag</li>
-      </ul>
-      <h3 class="title">video 제목</h3>
-      <div class="info">
-        <span>조회수 111,111회</span>
-        <span>2020.06.08</span>
-        <ul class="actions">
-          <li><button><i class="fas fa-home"></i><span>3.5천</span></button></li>
-          <li><button><i class="fas fa-home"></i><span>3.5천</span></button></li>
-          <li><button><i class="fas fa-home"></i><span>공유</span></button></li>
-          <li><button><i class="fas fa-home"></i><span>저장</span></button></li>
+    </aside>
+    <!-- main -->
+    <main>
+      <!-- video -->
+      <section class="player">
+        <video src="./video/video.mp4" controls type="video/mp4"></video>
+      </section>
+      <!-- video info -->
+      <section class="video__info">
+        <ul class="hashtags">
+          <li>#tag</li>
+          <li>#tag</li>
+          <li>#tag</li>
         </ul>
-      </div>
-    </section>
-    <!-- channel info -->
-    <section class="channel">
-      <img src="./img/kang.jpg" alt="">
-      <div class="name">kangdari</div>
-      <button class="subscribe">subscribe</button>
-      <div class="content">123</div>
-    </section>
-    <!-- next video -->
-    <section class="next">
-      <span>다음 동영상</span>
-      <ul>
-        <li class="next__item">
-          <img src="./img/kang.jpg" alt="" class="thumbnail">
-          <div class="info">
-            <span class="title">강다리제목</span>
-            <span class="name">kangdari</span>
-            <div class="metadata">
-              <span class="views">12만회</span>
-              <span class="date">1개월 전</span>
+        <span class="title">다이어트 해야합니다.</span>
+        <div class="meta_data">
+          <span class="views">조회수 111,111회</span>
+          <span class="date">2020.06.08</span>
+          <ul class="btns">
+            <li><button class="like"><i class="icon fas fa-thumbs-up"></i><span>3.5천</span></button></li>
+            <li><button class="dislike"><i class="icon fas fa-thumbs-down"></i><span>420</span></button></li>
+            <li><button><i class="icon fas fa-share"></i></i><span>공유</span></button></li>
+            <li><button><i class="icon fas fa-folder-plus"></i></i><span>저장</span></button></li>
+            <li><button><i class="icon fas fa-ellipsis-h"></i></i></button></li>
+          </ul>
+        </div>
+      </section>
+      <!-- channel info -->
+      <section class="channel">
+        <img src="./img/kang.jpg" alt="">
+        <div class="name">kangdari</div>
+        <button class="subscribe">subscribe</button>
+        <div class="content">123</div>
+      </section>
+      <!-- next video -->
+      <section class="next">
+        <span>다음 동영상</span>
+        <ul>
+          <li class="next__item">
+            <img src="./img/kang.jpg" alt="" class="thumbnail">
+            <div class="info">
+              <span class="title">강다리제목</span>
+              <span class="name">kangdari</span>
+              <div class="metadata">
+                <span class="views">12만회</span>
+                <span class="date">1개월 전</span>
+              </div>
             </div>
-          </div>
-          <button class="more__btn">**</button>
-        </li>
-        <li class="next__item">
-          <img src="./img/kang.jpg" alt="" class="thumbnail">
-          <div class="info">
-            <span class="title">강다리제목</span>
-            <span class="name">kangdari</span>
-            <div class="metadata">
-              <span class="views">12만회</span>
-              <span class="date">1개월 전</span>
+            <button class="more__btn">**</button>
+          </li>
+          <li class="next__item">
+            <img src="./img/kang.jpg" alt="" class="thumbnail">
+            <div class="info">
+              <span class="title">강다리제목</span>
+              <span class="name">kangdari</span>
+              <div class="metadata">
+                <span class="views">12만회</span>
+                <span class="date">1개월 전</span>
+              </div>
             </div>
-          </div>
-          <button class="more__btn">**</button>
-        </li>
-        <li class="next__item">
-          <img src="./img/kang.jpg" alt="" class="thumbnail">
-          <div class="info">
-            <span class="title">강다리제목</span>
-            <span class="name">kangdari</span>
-            <div class="metadata">
-              <span class="views">12만회</span>
-              <span class="date">1개월 전</span>
+            <button class="more__btn">**</button>
+          </li>
+          <li class="next__item">
+            <img src="./img/kang.jpg" alt="" class="thumbnail">
+            <div class="info">
+              <span class="title">강다리제목</span>
+              <span class="name">kangdari</span>
+              <div class="metadata">
+                <span class="views">12만회</span>
+                <span class="date">1개월 전</span>
+              </div>
             </div>
-          </div>
-          <button class="more__btn">**</button>
-        </li>
-      </ul>
-    </section>
-    <!-- comment -->
-    <section class="comment">
-      <div class="comment__header"">
+            <button class="more__btn">**</button>
+          </li>
+        </ul>
+      </section>
+      <!-- comment -->
+      <section class="comment">
+        <div class="comment__header"">
         <ul>
           <li>댓글 369개</li>
           <li><i class=" fas fa-home"></i><span>정렬 기준</span></li>
-        </ul>
-        <div class="editor">
-          <div>상혁</div>
-          <div class="main">
-            <input type="text" placeholder="공개 댓글 추가">
-            <div class="comment__btn">
-              <button>취소</button>
-              <button>댓글</button>
+          </ul>
+          <div class="editor">
+            <div>상혁</div>
+            <div class="main">
+              <input type="text" placeholder="공개 댓글 추가">
+              <div class="comment__btn">
+                <button>취소</button>
+                <button>댓글</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="comment__main">
+        <div class="comment__main">
 
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <aside></aside>
-  </main>
+      <aside></aside>
+    </main>
+
+  </div>
 </body>
 
 </html>

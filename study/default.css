@@ -151,7 +151,6 @@ a:hover,
 a:active {
   text-decoration: none;
   color: #fff;
-  background-color: #f59000;
 }
 
 button {
@@ -160,4 +159,10 @@ button {
   cursor: pointer;
   background-color: transparent;
   padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
