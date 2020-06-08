@@ -276,12 +276,13 @@
           <li>#tag</li>
           <li>#tag</li>
         </ul>
-        <span class="title">다이어트 해야합니다.</span>
+        <span class="title">다이어트 해야합니다.다이어트 해야합니다.</span>
         <div class="meta_data">
           <span class="views">조회수 111,111회</span>
           <span class="date">2020.06.08</span>
           <ul class="btns">
-            <li><button class="like"><i class="icon fas fa-thumbs-up"></i><span>3.5천</span></button></li>
+            <!-- active 클래스 있으면 파란 글자 -->
+            <li><button class="like active"><i class="icon fas fa-thumbs-up"></i><span>3.5천</span></button></li>
             <li><button class="dislike"><i class="icon fas fa-thumbs-down"></i><span>420</span></button></li>
             <li><button><i class="icon fas fa-share"></i></i><span>공유</span></button></li>
             <li><button><i class="icon fas fa-folder-plus"></i></i><span>저장</span></button></li>
@@ -291,51 +292,85 @@
       </section>
       <!-- channel info -->
       <section class="channel">
-        <img src="./img/kang.jpg" alt="">
-        <div class="name">kangdari</div>
-        <button class="subscribe">subscribe</button>
-        <div class="content">123</div>
+        <div class="top">
+          <img src="./img/kang.jpg" alt="">
+          <span class="name">kangdari</span>
+          <button class="subscribe">구독</button>
+        </div>
+        <div class="meta_data">
+          <ul class="hashtags">
+            <li>#a</li>
+            <li>#b</li>
+            <li>#c</li>
+          </ul>
+          <span>주저하는 연인들을 위해</span>
+        </div>
       </section>
       <!-- next video -->
       <section class="next">
-        <span>다음 동영상</span>
+        <div class="title">다음 동영상</div>
         <ul>
           <li class="next__item">
-            <img src="./img/kang.jpg" alt="" class="thumbnail">
-            <div class="info">
-              <span class="title">강다리제목</span>
+            <div class="img"><img src="./img/kang.jpg" alt="" class="thumbnail"></div>
+            <div class="info" li>
+              <span class="title">제목</span>
               <span class="name">kangdari</span>
               <div class="metadata">
                 <span class="views">12만회</span>
                 <span class="date">1개월 전</span>
               </div>
             </div>
-            <button class="more__btn">**</button>
+            <button class="more__btn"><i class="fas fa-ellipsis-v"></i></button>
           </li>
           <li class="next__item">
-            <img src="./img/kang.jpg" alt="" class="thumbnail">
+            <div class="img"><img src="./img/kang.jpg" alt="" class="thumbnail"></div>
             <div class="info">
-              <span class="title">강다리제목</span>
+              <span class="title">제목</span>
               <span class="name">kangdari</span>
               <div class="metadata">
                 <span class="views">12만회</span>
                 <span class="date">1개월 전</span>
               </div>
             </div>
-            <button class="more__btn">**</button>
+            <button class="more__btn"><i class="fas fa-ellipsis-v"></i></button>
           </li>
           <li class="next__item">
-            <img src="./img/kang.jpg" alt="" class="thumbnail">
+            <div class="img"><img src="./img/kang.jpg" alt="" class="thumbnail"></div>
             <div class="info">
-              <span class="title">강다리제목</span>
+              <span class="title">제목 제목 제목 제목 제목 제목 </span>
               <span class="name">kangdari</span>
               <div class="metadata">
                 <span class="views">12만회</span>
                 <span class="date">1개월 전</span>
               </div>
             </div>
-            <button class="more__btn">**</button>
+            <button class="more__btn"><i class="fas fa-ellipsis-v"></i></button>
           </li>
+          <li class="next__item">
+            <div class="img"><img src="./img/kang.jpg" alt="" class="thumbnail"></div>
+            <div class="info">
+              <span class="title">제목 제목 제목 제목 제목 제목 </span>
+              <span class="name">kangdari</span>
+              <div class="metadata">
+                <span class="views">12만회</span>
+                <span class="date">1개월 전</span>
+              </div>
+            </div>
+            <button class="more__btn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="next__item">
+            <div class="img"><img src="./img/kang.jpg" alt="" class="thumbnail"></div>
+            <div class="info">
+              <span class="title">제목 제목 제목 제목 제목 제목 </span>
+              <span class="name">kangdari</span>
+              <div class="metadata">
+                <span class="views">12만회</span>
+                <span class="date">1개월 전</span>
+              </div>
+            </div>
+            <button class="more__btn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <!-- 더보기 -->
         </ul>
       </section>
       <!-- comment -->

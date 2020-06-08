@@ -44,9 +44,11 @@ $simple__btn.addEventListener("click", () => {
 });
 
 //  구독 더보기
-const $sub__expansion__btn = document.querySelector('.sub__expansion__btn');
-const $sub__side__menu__expansion = document.querySelector('.sub__side__menu__expansion');
-const $sub__simple__btn = document.querySelector('.sub__simple__btn');
+const $sub__expansion__btn = document.querySelector(".sub__expansion__btn");
+const $sub__side__menu__expansion = document.querySelector(
+  ".sub__side__menu__expansion"
+);
+const $sub__simple__btn = document.querySelector(".sub__simple__btn");
 
 $sub__expansion__btn.addEventListener("click", () => {
   $sub__side__menu__expansion.classList.toggle("show");
@@ -57,3 +59,5 @@ $sub__simple__btn.addEventListener("click", () => {
   $sub__side__menu__expansion.classList.toggle("show");
   $sub__expansion__btn.style.display = "flex";
 });
+
+// 좋아요 싫어요
