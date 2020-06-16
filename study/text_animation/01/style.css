@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-family: sans-serif;
+}
+
+/* transform 속성은 inline 요소에 적용이 안됨. */
+/* inline-block으로 변경 */
+span {
+  /* display: inline-block; */
+  opacity: 0;
+  transition: all 0.4s ease;
+  /* transform: scale(0); */
+}
+
+.fade {
+  opacity: 1;
+  /* transform: scale(1); */
+}
