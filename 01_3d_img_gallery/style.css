@@ -38,6 +38,7 @@ body {
   transform-origin: center;
   transform-style: preserve-3d;
   transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  /* 표준 아님 */
   -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, #0004);
 }
 
