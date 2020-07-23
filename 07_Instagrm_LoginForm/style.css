@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ededed;
+  font-size: 14px;
+}
+
+.login_form_box {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  min-width: 400px;
+  background: #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.login_form_box .login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input_box {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.input_box input {
+  width: 100%;
+  padding: 10px 0 1px 8px;
+  height: 36px;
+  background-color: #f1f3f5;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.input_box .placeholder {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  line-height: 36px;
+  font-size: 12px;
+  color: #adb5bd;
+  user-select: none;
+  pointer-events: none;
+  transition: all 0.05s linear;
+}
+
+.input_box .show_password {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  line-height: 36px;
+  font-weight: 600;
+  visibility: hidden;
+  cursor: pointer;
+  user-select: none;
+}
+
+.input_box input:valid ~ .placeholder {
+  top: -8px;
+  font-size: 8px;
+}
+
+.input_box input:valid ~ .show_password {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.login_btn {
+  width: 80%;
+  color: #fff;
+  background: #228be6;
+  border: none;
+  padding: 5px 9px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.login_btn:disabled {
+  background: #d0ebff;
+  pointer-events: none;
+}
+
+.line_box {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #868e96;
+}
+
+.line_box .line {
+  flex: 1;
+  height: 1px;
+  background: #868e96;
+}
+
+.line_box .text {
+  padding: 0 10px;
+}
+
+.fb_link {
+  width: 80%;
+  text-align: center;
+}
+
+.link,
+.icon {
+  margin: 10px 0;
+  color: #364fc7;
+  font-weight: 600;
+}
+
+.btm {
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #e9ecef;
+  text-align: center;
+  padding: 20px 40px;
+  color: #adb5bd;
+}
+
+.btm a {
+  color: #1971c2;
+  font-weight: 600;
+}
