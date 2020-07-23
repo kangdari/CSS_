@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="test.css" />
+    <title>Riot Login Form</title>
+  </head>
+  <body>
+    <form action="#" class="login_form">
+      <h1>로그인</h1>
+
+      <div class="input_box">
+        <input type="text" required />
+        <div class="placeholder">아이디</div>
+      </div>
+
+      <div class="input_box">
+        <input type="text" required />
+        <div class="placeholder">비밀번호</div>
+        <div class="show_password fas fa-eye-slash"></div>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="fas fa-check"></div>
+        <label for="checkbox"> 로그인 상태 유지</label>
+      </div>
+
+      <button class="btn fas fa-arrow-right" disabled></button>
+      <a href="#">로그인이 안 되시나요?</a>
+      <a href="#">계정 생성하기</a>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
